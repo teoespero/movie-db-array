@@ -10,14 +10,6 @@
 <html lang="en">
 <html>
 	<head>
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link href="normalize.css" rel="stylesheet" type="text/css">
-			<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-			<link href="bootstrap.css" rel="stylesheet" type="text/css">
-			<link href="galery.css" rel="stylesheet" type="text/css">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-			<script type="text/javascript" src="bootstrap.js"></script>
 			<meta charset="utf-8">
 			<title>teoespero.com | Javascript Programming - Arrays and Objects</title>
 			<meta name="description" content="">
@@ -26,45 +18,53 @@
   
 	</head>
 	<body>
-		<div class="container">
-			<h1>Movie Listing</h1>
+		<h1>Movie Listing</h1>
 			<p>
-				<script type="text/javascript">
-					var movies = [
-							{
-								title: "Red Sparrow",
-								hasWatched: true,
-								rating: "6.6/10"
-							},
-							{
-								title: "Wonder",
-								hasWatched: true,
-								rating: "8/10"
-							},
-							{
-								title: "Wedding Crashers",
-								hasWatched: false,
-								rating: "7.0/10"
-							},
-							{
-								title: "The Internship",
-								hasWatched: true,
-								rating: "6.3/10"
-							}	
-						]
+			<script type="text/javascript">
+				var movies = [
+					{
+						title: "Red Sparrow",
+						hasWatched: true,
+						rating: "6.6/10"
+					},							
+					{
+						title: "Wonder",
+						hasWatched: true,
+						rating: "8/10"
+					},
+					{
+						title: "Wedding Crashers",
+						hasWatched: false,
+						rating: "7.0/10"
+					},
+					{
+						title: "The Internship",								
+						hasWatched: true,
+						rating: "6.3/10"
+					},
+					{
+						title: "Starsky & Hutch",
+						hasWatched: true,
+						rating: "6.1/10"
+					},
+					{
+						title: "Meet the Fockers",
+						hasWatched: true,
+						rating: "6.3/10"
+					}	
+				]
 
-					for (counter = 0; counter < movies.length; counter++){
-						var result = "You have ";
-						if (movies[counter].hasWatched){
-						 	result += "watched ";
-						}
-						else {
-							result += "not seen ";	
-						}
-						document.write(result + "<b>\"" + movies[counter].title + "\"</b> (IMDB rating " + movies[counter].rating + "). <br>");
+				for (counter = 0; counter < movies.length; counter++){
+					var result = "You have ";
+					if (movies[counter].hasWatched){
+					 	result += "watched ";
 					}
-				</script>
+					else {
+						result += "not seen ";	
+					}
+					document.write(result + "<b>\"" + movies[counter].title + "\"</b> (IMDB rating " + movies[counter].rating + "). <br>");
+				}
+			</script>
 			</p>
-		</div>
 	</body>
 </html>
